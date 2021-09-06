@@ -20,8 +20,17 @@ relating to the item they've chosen.
 
 ```
 {% from "govuk/components/radios/macro.njk" import govukRadios %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% extends "layout.html" %}
 
-{{ govukRadios({
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form>
+  {{ govukRadios({
   idPrefix: "where-do-you-live",
   name: "redirect",
   fieldset: {
@@ -50,4 +59,10 @@ relating to the item they've chosen.
     }
   ]
 }) }}
+
+{{ govukButton({
+  text: "Save and continue"
+}) }}
+</form>
+{% endblock %}
 ```
