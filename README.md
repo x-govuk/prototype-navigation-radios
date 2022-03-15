@@ -2,7 +2,7 @@
 
 A radio navigation solution for the GOVUK Prototype Kit
 
-##Installation
+## Installation
 
 This is an extension to the GOVUK Prototype Kit, it can be installed using:
 
@@ -10,13 +10,13 @@ This is an extension to the GOVUK Prototype Kit, it can be installed using:
 npm install --save https://github.com/x-govuk/prototype-navigation-radios.git
 ```
 
-##Usage
+## Usage
 
 After installation you can use a standard set of [radio buttons](https://design-system.service.gov.uk/components/radios/).
 Use the name `redirect` and then put a URL into each item's `value`, when the user submits the form it will navigate them to the page 
 relating to the item they've chosen.  
 
-###Example (nunjucks)
+### Example (nunjucks)
 
 ```
 {% from "govuk/components/radios/macro.njk" import govukRadios %}
